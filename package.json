@@ -1,0 +1,22 @@
+{
+  "name": "gulp-4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "./node_modules/.bin/gulp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-prompt": "^1.0.1",
+    "gulp-replace": "^1.0.0",
+    "gulp-util": "^3.0.8",
+    "windosu": "^0.3.0"
+  }
+}
