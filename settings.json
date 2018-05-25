@@ -1,0 +1,11 @@
+{
+	"user": "Bruno Macedo",
+	"email": "contato@brunomacedo.com.br",
+	"corporate": "UOL",
+	"editor": "C:/Program Files/Microsoft VS Code/Code.exe",
+	"chrome": "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe",
+	"paths_default": {
+		"templates": "C:/www/templates",
+		"images": "C:/www/apache"
+	}
+}
