@@ -11,7 +11,7 @@ const promptProjects = () => {
 			getCurrent = obj[el].folders.assets;
 		}
 	}
-	console.log(warning('Assets: ', error(getCurrent)));
+	console.log(warning('Assets: ', error(getCurrent.trainlingSlash())));
 };
 
 export default promptProjects;
