@@ -1,8 +1,14 @@
 import gulp from 'gulp';
-import promptProjects from './prompt';
+import { promptProjects, newObj } from './prompt';
+import { error, warning, good } from './logs';
 
+promptProjects();
 gulp.task('open', () => {
-	promptProjects();
+	console.log(warning('Project: ', error(newObj.name)));
+	console.log(warning('URL: ', error(newObj.html)));
+	console.log(warning('Assets: ', error(newObj.assets)));
 });
 
-gulp.task('close', ['open'], () => { });
+gulp.task('close', () => {
+	console.log(warning('Assets: ', error(newObj.assets)));
+});
