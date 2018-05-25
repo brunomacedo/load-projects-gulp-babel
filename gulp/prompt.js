@@ -1,17 +1,18 @@
-import { error, warning, good } from './logs';
 import obj from '../paths.json';
 import './functions';
 
+const newObj = {};
 const promptProjects = () => {
 	const args = {};
 	args.name = process.argv[3];
 	let getCurrent;
 	for (const el in obj) {
 		if (obj[el].name === args.name) {
-			getCurrent = obj[el].folders.assets;
+			newObj.name = obj[el].name;
+			newObj.html = obj[el].folders.html.trainlingSlash();
+			newObj.assets = obj[el].folders.assets.trainlingSlash();
 		}
 	}
-	console.log(warning('Assets: ', error(getCurrent.trainlingSlash())));
 };
 
-export default promptProjects;
+export { promptProjects, newObj };
