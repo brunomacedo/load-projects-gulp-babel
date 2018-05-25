@@ -1,16 +1,16 @@
 [
 	{
-		"name": "--playkids",
+		"name": "--products",
 		"folders": {
-			"html": "playkids.uol.com.br",
-			"assets": "p/pp/playkids/integracao"
+			"html": "products.com.br",
+			"assets": "p/pp/products/integracao"
 		}
 	},
 	{
-		"name": "--dieta",
+		"name": "--websites",
 		"folders": {
-			"html": "dieta.uol.com.br",
-			"assets": "p/pp/2018/uol-dieta"
+			"html": "websites.com.br",
+			"assets": "p/pp/2018/websites"
 		}
 	}
 ]
