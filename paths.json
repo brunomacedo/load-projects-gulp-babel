@@ -1,0 +1,16 @@
+[
+	{
+		"name": "--playkids",
+		"folders": {
+			"html": "playkids.uol.com.br",
+			"assets": "p/pp/playkids/integracao"
+		}
+	},
+	{
+		"name": "--dieta",
+		"folders": {
+			"html": "dieta.uol.com.br",
+			"assets": "p/pp/2018/uol-dieta"
+		}
+	}
+]
