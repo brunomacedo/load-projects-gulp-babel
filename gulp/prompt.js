@@ -1,6 +1,6 @@
-const { error, warning, good } = require('./logs');
-const obj = require('../paths.json');
-require('./functions');
+import { error, warning, good } from './logs';
+import obj from '../paths.json';
+import './functions';
 
 const promptProjects = () => {
 	const args = {};
@@ -14,4 +14,4 @@ const promptProjects = () => {
 	console.log(warning('Assets: ', error(getCurrent)));
 };
 
-module.exports = promptProjects;
+export default promptProjects;
