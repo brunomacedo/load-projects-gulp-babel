@@ -22,25 +22,23 @@ gulp.task('close', () => {
 // START
 
 gulp.task('sass', () => {
-	gulp.src('assets/**/*.scss')
+	gulp.src('**/scss/*.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(autoprefixer({browsers: ['last 40 versions', '> 5%', 'Firefox ESR']}))
-		.pipe(gulp.dest((element) => {
-			console.log('DIRNAME PATH GULP >>>>>>>>>> ', element.dirname);
-		}));
+		.pipe(gulp.dest('./'));
 });
 
 gulp.task('compass', () => {
-	gulp.src('assets/**/*.scss')
+	gulp.src('**/scss/*.scss')
 		.pipe(compass({
 			config_file: './config.rb',
 			css: 'assets',
 			sass: 'assets'
 		}))
 		.pipe(autoprefixer({browsers: ['last 40 versions', '> 5%', 'Firefox ESR']}))
-		.pipe(gulp.dest('./assets/'));
+		.pipe(gulp.dest('./'));
 });
 
 gulp.task('default', () => {
-	gulp.watch('assets/**/*.scss', ['sass']);
+	gulp.watch('**/scss/*.scss', ['sass']);
 });
