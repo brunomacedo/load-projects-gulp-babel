@@ -19,6 +19,7 @@
     "gulp-compass": "^2.1.0",
     "gulp-prompt": "^1.0.1",
     "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.1",
     "gulp-util": "^3.0.8",
     "windosu": "^0.3.0"
   }
